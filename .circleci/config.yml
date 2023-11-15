@@ -13,7 +13,7 @@ commands:
     parameters:
       message:
         type: string
-        default: "hello world new world"
+        default: "hello world"
     steps:
       - run: echo << parameters.message >>
 
