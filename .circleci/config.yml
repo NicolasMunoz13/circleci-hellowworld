@@ -5,6 +5,8 @@ executors:
     docker:
       - image: cimg/node:17.2.0 # the primary container, where your job's commands are run
 
+orbs:
+  hello-orb-2023: nicolaskcorb/nicolaskcorb@0.0.1
 
 
 commands:
@@ -16,6 +18,7 @@ commands:
         default: "hello world"
     steps:
       - run: echo << parameters.message >>
+      - hello-orb-2023/greet
 
 jobs:
   hello-job:
