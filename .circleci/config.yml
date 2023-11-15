@@ -18,7 +18,7 @@ commands:
         default: "hello world"
     steps:
       - run: echo << parameters.message >>
-      - hello-orb-2023/greet
+      - run: hello-orb-2023/greet
 
 jobs:
   hello-job:
